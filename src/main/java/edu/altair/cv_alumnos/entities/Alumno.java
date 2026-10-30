@@ -16,7 +16,7 @@ public class Alumno {
     @Column(name = "id_alumno")
     private Long idAlumno;
 
-    @Column(name = "dni", nullable = false, length = 9)
+    @Column(name = "dni", nullable = false, length = 9, unique = true)
     private String dni;
 
     @Column(name = "nombre", nullable = false, length = 100)
